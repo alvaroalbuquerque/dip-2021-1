@@ -15,8 +15,8 @@ print(test_images.shape)
 
 # Select some images
 print("Selecting dataset...")
-train_images = train_images[:20000]
-train_labels = train_labels[:20000]
+train_images = train_images[:30000]
+train_labels = train_labels[:30000]
 test_images = test_images[:10000]
 test_labels = test_labels[:10000]
 print(train_images.shape)
@@ -48,4 +48,4 @@ for L1_value in L1_all:
 
 
 df = pd.DataFrame(data, columns=['L1','mean','std'])
-df.to_csv("MNIST_L1_{}reps_20k_10k.csv".format(n_repetitions),index=False)
+df.to_csv("MNIST_L1_{}reps_30k_10k.csv".format(n_repetitions),index=False)
